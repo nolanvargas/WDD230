@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Quicksand:wght@500&display=swap');
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+header {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 80px 40px;
+    max-width: 1000px;
+    margin: auto;
+    background-color: black;
+    margin-bottom: 30px;
+    
+}
+
+
+#active {
+    background-color: white;
+    color: black;
+}
+
+.navlink, #title{
+    justify-self: center;
+    align-self: center;
+}
+
+.navlink {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+#title {
+    grid-area: 1/1/1/5;
+    color: white;
+}
+
+#content, #personas, #colorGrid, #colorCodes, table{
+    max-width: 1000px;
+    margin: auto;
+}
+
+h3, img {
+    display: block;
+    padding: 15px;
+    margin: auto;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.1em;
+}
+
+ul {
+    list-style: none
+}
+
+li {
+    margin: 10px;
+}
+
+#personas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#colorGrid {
+    border: 2px solid black;
+}
+
+#colorGrid, #colorCodes {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 200px;
+    text-align: center;
+}
+
+#black {
+    background-color: #000;
+}
+
+#grey {
+    background-color: #14213D;
+}
+
+#FCA311 {
+    background-color: #FCA311;
+}
+
+#E5E5E5 {
+    background-color: #E5E5E5;
+}
+
+#FFFFFF {
+    background-color: #FFF;
+}
+
+#colorCodes {
+    margin-top: -50px;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    margin: auto;
+}
+
+td {
+    font-size: 1.4em;
+    padding: 5px;
+}
+
+.row1, .row2 {
+    background-color: #14213D;
+    color: #E5E5E5;
+}
+
+.row1, .row3, .row4, .row5 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.row2, .row6 {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.row5 {
+    color: #FCA311;
+    background-color: black;
+}
+
+.row3 {
+    color: black;
+
+}
+
+.row4 {
+    color: #14213D;
+}
+
+.row6 {
+    background-color: #E5E5E5;
+    color: black;
+}
+
+footer {
+    display: block;
+    height: 100px;
+    color: white;
+    background-color: black;
+    max-width: 1000px;
+    margin: 20px auto;
+    align-content: center;
+}
+
+footer p{
+    display: block;
+    max-width: fit-content;
+    margin: auto;
+    padding-top: 20px;
+
+}
