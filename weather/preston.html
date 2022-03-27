@@ -49,15 +49,15 @@ Saturday = Preston Pancakes in the Park!
           src="images\wdd230_image_franklinOriginal1000.jpeg">
         <div id="currentWeather">
           <h3>Current Weather</h3>
-          <h5 id="rightAlign">Currently:</h5>
-          <h5>Sunny</h5>
-          <h5 id="rightAlign">High:</h5>
-          <h5 id="currentTemp">50°</h5>
-          <h5 id="rightAlign">Wind Chill:</h5>
+          <h5 class="rightAlign" >Currently:</h5>
+          <h5 id="currently">Unavailable</h5>
+          <h5 class="rightAlign">High:</h5>
+          <h5 id="currentTemp">N/A</h5>                           <!-- broken -->
+          <h5 class="rightAlign">Wind Chill:</h5>
           <h5 id="windChill">N/A</h5>
-          <h5 id="rightAlign">Humidity:</h5>
+          <h5 class="rightAlign">Humidity:</h5>
           <h5>23%</h5>
-          <h5 id="rightAlign">Wind Speed:</h5>
+          <h5 class="rightAlign">Wind Speed:</h5>
           <h5 id="windSpeed">10 mph</h5>
         </div>
       </div>
@@ -104,6 +104,7 @@ Saturday = Preston Pancakes in the Park!
 
 
       <script src="js/index.js"></script>
-      <script src="js/windchill.js"></script>
+      <script type="module" src="/weather/js/windchill.js"></script>
+      <script type="module" src="/weather/js/preston.js"></script>
     </body>
   </html>
