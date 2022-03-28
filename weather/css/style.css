@@ -170,7 +170,8 @@ nav ul {
   }
 
   .galleryImg {
-    width: 32%;
+    width: 30%;
+    margin: 10px;
   }
 }
 
