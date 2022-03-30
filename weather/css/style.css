@@ -337,6 +337,28 @@ nav ul {
 #contact img {
   width: 30px;
 }
+#forecast {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  max-width: 1000px;
+  width: 95%;
+  margin: auto;
+}
+
+.card {
+  width: 90%;
+  height: 230px;
+  margin: auto;
+  border: 2px solid #fca311;
+  font-size: 1.3rem;
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  background-color: #e5e5e5;
+}
+
+.card h3 {
+  border-bottom: #000;
+}
 /*-------------------- FOOTER --------------------*/
 
 footer {
