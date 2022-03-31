@@ -9,23 +9,6 @@ ul {
   padding-inline-start: 0px;
 }
 
-/*-------------------- ASIDE --------------------*/
-
-#prestonPancakes {
-  display: none;
-  text-align: center;
-  font-family: "Quicksand", sans-serif;
-  font-size: 1rem;
-  color: #14213d;
-  background-color: #e5e5e5;
-  overflow: hidden;
-}
-
-#prestonPancakesMessage {
-  margin: 0 auto;
-  padding: 5px;
-}
-
 /*-------------------- HEADER --------------------*/
 
 header {
@@ -120,26 +103,10 @@ nav ul {
   }
 }
 
-@media (max-width: 999px) {
-  #gallery {
-    margin: auto;
-  }
-
-  .galleryImg {
-    width: 80%;
-    display: block;
-    margin: 30px auto;
-  }
-}
-
 @media (min-width: 548px) {
   #currentWeather {
     height: 300px;
     width: 250px;
-  }
-
-  #prestonPancakes {
-    font-size: 1.25rem;
   }
 
   .navigation {
@@ -157,88 +124,8 @@ nav ul {
   }
 }
 
-@media (min-width: 1000px) {
-  #gallery {
-    margin: 30px auto;
-  }
-
-  .galleryImg {
-    width: 40%;
-    margin: 30px;
-  }
-}
-
-@media (min-width: 1500px) {
-  #gallery {
-    margin: 30px auto;
-  }
-
-  .galleryImg {
-    width: 30%;
-    margin: 10px;
-  }
-}
-
 /*-------------------- CONTENT --------------------*/
-.form {
-  background-color: lightgray;
-  max-width: 700px;
-  margin: auto;
-}
 
-#stormCenter h1 {
-  margin: 10px auto;
-  text-align: center;
-  font-family: "Quicksand", sans-serif;
-}
-
-#tickmarks {
-  display: none;
-}
-.form * {
-  display: block;
-  padding-top: 10px;
-  margin: 5px;
-}
-#rating {
-  padding: 0;
-  margin-top: -5px;
-}
-.flexly {
-  display: flex;
-}
-#location *,
-#location,
-#danger,
-#danger * {
-  padding: 0;
-}
-#location label,
-#danger label {
-  display: flex;
-}
-
-#location h4,
-#danger h4 {
-  display: block;
-}
-[type*="submit"] {
-  width: 100px;
-  margin: 20px auto;
-  padding-bottom: 10px;
-}
-[type*="text"],
-[type*="email"],
-[type*="tel"] {
-  width: 50%;
-}
-#gallery {
-  max-width: 1000px;
-}
-
-#danger {
-  margin-top: 10px;
-}
 #content {
   max-width: 1000px;
   margin: auto;
@@ -267,14 +154,6 @@ nav ul {
   display: flex;
   max-width: 100%;
   margin: auto;
-}
-
-#thanks {
-  width: 500px;
-  font-family: "Quicksand", sans-serif;
-  font-size: 1.25rem;
-  margin: 50px auto;
-  text-align: center;
 }
 
 #currentWeather {
@@ -316,7 +195,7 @@ nav ul {
 
 #article img {
   display: flex;
-  max-width: 100%;
+  max-width: 90%;
   margin: 50px auto;
   padding-top: 10px;
 }
@@ -370,7 +249,7 @@ footer {
   color: #e5e5e5;
   display: grid;
   margin-top: 50px;
-  padding: 20px;
+  padding: 20px 20px 20px 30px;
   font-family: "Roboto", sans-serif;
   font-size: 1.25rem;
   text-transform: uppercase;
@@ -392,6 +271,11 @@ footer ul {
 footer ul li {
   margin: -7px;
   padding: 0;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: white;
 }
 
 footer img {

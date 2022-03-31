@@ -4,9 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Fish Haven | RN Weather</title>
+    <title>404 | RN Weather</title>
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="css/thanks.css" />
     <link rel="stylesheet" href="css\style.css" />
-    <link rel="icon" href="/lesson-06/images/icons/favicon16x16.png"
+    <link rel="icon" href="/lesson-06/images/icons/favicon16x16.png" />
   </head>
   <body>
     <header>
@@ -25,60 +27,15 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="preston.html">Preston</a></li>
         <li><a href="sodaSprings.html">Soda Springs</a></li>
-        <li><a id="active" href="fishHaven.html">Fish Haven</a></li>
+        <li><a href="fishHaven.html">Fish Haven</a></li>
         <li><a href="stormcenter.html">Storm Center</a></li>
         <li><a href="gallery.html">Gallery</a></li>
       </ul>
     </nav>
 
-    <div id="content">
-      <h2 id="cityName">Fish Haven, ID</h2>
-
-      <div id="hero">
-        <img
-          srcset="
-            images\wdd230_image_franklinOriginal350.jpeg 350w,
-            images\wdd230_image_franklinOriginal500.jpeg 500w
-          "
-          sizes="(max-width:500px) 350px, (max-width:750px) 500px"
-          src="images\wdd230_image_franklinOriginal1000.jpeg"
-        />
-        <div id="currentWeather">
-          <h3>Current Weather</h3>
-          <h5 class="rightAlign">Currently:</h5>
-          <h5 id="currently">Unavailable</h5>
-          <h5 class="rightAlign">High:</h5>
-          <h5 id="currentTemp">N/A</h5>
-          <!-- broken -->
-          <h5 class="rightAlign windChill">Wind Chill:</h5>
-          <h5 class="windChill" id="windChillValue">N/A</h5>
-          <h5 class="rightAlign">Humidity:</h5>
-          <h5 id="humidityValue">N/A</h5>
-          <h5 class="rightAlign">Wind Speed:</h5>
-          <h5 id="windSpeed">N/A</h5>
-        </div>
-      </div>
-
-      <div id="forecast">
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-      </div>
-
-      <div id="article">
-        <img src="images\stock.jpg" />
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-      </div>
+    <div id="thanks">
+      <h1>404</h1>
+      <p>Page not Found</p>
     </div>
 
     <footer>
@@ -151,6 +108,6 @@
     </footer>
 
     <script src="js/index.js"></script>
-    <script type="module" src="./js/fishHaven.js"></script>
+    <script src="js/windchill.js"></script>
   </body>
 </html>
