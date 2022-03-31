@@ -45,3 +45,7 @@
 .galleryImg {
   border: 12px solid #e5e5e5;
 }
+
+.galleryImg:hover {
+  box-shadow: 0 0 50px #2e403d;
+}
