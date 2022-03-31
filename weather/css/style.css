@@ -5,6 +5,9 @@ body {
   min-width: 379px;
 }
 
+ul {
+  padding-inline-start: 0px;
+}
 /*-------------------- ASIDE --------------------*/
 
 #prestonPancakes {
