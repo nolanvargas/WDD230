@@ -1,0 +1,567 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Roboto:wght@100&display=swap");
+
+body {
+  margin: 0;
+  min-width: 379px;
+}
+ul {
+  padding-inline-start: 0px;
+}
+
+/*-------------------- ASIDE --------------------*/
+
+#prestonPancakes {
+  display: none;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  color: #14213d;
+  background-color: #e5e5e5;
+  overflow: hidden;
+}
+
+#prestonPancakesMessage {
+  margin: 0 auto;
+  padding: 5px;
+}
+
+/*-------------------- HEADER --------------------*/
+
+header {
+  background-color: #14213d;
+  display: flex;
+  justify-content: center;
+}
+
+#motto,
+#companyTitle {
+  color: #e5e5e5;
+  margin: 0;
+}
+
+#companyTitle {
+  max-height: 50px;
+  padding-top: 55px;
+  font-family: "Roboto", sans-serif;
+  color: #e5e5e5;
+}
+
+#motto {
+  font-family: "Quicksand", sans-serif;
+  max-height: 30px;
+  display: flex;
+}
+
+#logo {
+  max-width: 120px;
+  padding: 20px;
+}
+
+#company {
+  padding-right: 20px;
+}
+
+#active {
+  color: #fca311;
+}
+
+/*-------------------- NAV --------------------*/
+
+nav {
+  margin: 0 auto;
+  background-color: #000;
+}
+
+nav ul {
+  margin: auto;
+  max-width: 760px;
+}
+
+.navigation {
+  padding: 0;
+}
+
+.navigation li:first-child {
+  display: block;
+}
+
+.navigation li {
+  display: none;
+}
+
+.navigation a {
+  font-family: "Roboto", sans-serif;
+  display: block;
+  padding: 0.75rem;
+  text-align: left;
+  text-decoration: none;
+  color: #e5e5e5;
+  font-weight: 700;
+  transition: 0.25s;
+  font-size: clamp(1rem, 2vmin, 1.2rem);
+}
+
+.navigation a:hover {
+  color: #14213d;
+  background-color: #e5e5e5;
+}
+
+.responsive li {
+  display: block;
+}
+
+/*-------------------- MEDIA --------------------*/
+@media (max-width: 499px) {
+  [type*="text"],
+  [type*="email"],
+  [type*="tel"] {
+    width: 80%;
+  }
+}
+
+@media (max-width: 999px) {
+  #gallery {
+    margin: auto;
+  }
+
+  .galleryImg {
+    width: 80%;
+    display: block;
+    margin: 30px auto;
+  }
+
+  #home img {
+    width: 100%;
+  }
+
+  .name {
+    font-size: 2rem;
+  }
+
+  .motto {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 548px) {
+  #currentWeather {
+    height: 300px;
+    width: 250px;
+  }
+
+  #prestonPancakes {
+    font-size: 1.25rem;
+  }
+
+  .navigation {
+    display: flex;
+  }
+  .navigation li {
+    display: block;
+    flex: 1 1 auto;
+  }
+  .navigation a {
+    text-align: center;
+  }
+  .navigation li:first-child {
+    display: none;
+  }
+}
+
+@media (min-width: 1000px) {
+  #gallery {
+    margin: 30px auto;
+  }
+
+  .galleryImg {
+    width: 40%;
+    margin: 30px;
+  }
+
+  #home div {
+    overflow: auto;
+  }
+
+  #home ul {
+    width: 49%;
+    height: 50%;
+    margin: 5% 0;
+  }
+
+  #home img {
+    width: 50%;
+  }
+
+  .isRight img {
+    float: right;
+  }
+  .isRight ul {
+    float: left;
+  }
+  .isLeft ul {
+    float: right;
+  }
+  .isLeft img {
+    float: left;
+  }
+
+  .name {
+    font-size: 2.5rem;
+  }
+
+  .motto {
+    font-size: 1.75rem;
+  }
+
+  .descriptions {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 1500px) {
+  #gallery {
+    margin: 30px auto;
+  }
+
+  .galleryImg {
+    width: 32%;
+  }
+
+  #home {
+    display: flex;
+  }
+
+  #home div ul {
+    width: 100%;
+  }
+
+  #home div {
+    width: 32%;
+    height: 600px;
+    margin: 1%;
+  }
+
+  #home div img {
+    width: 100%;
+    max-height: 250px;
+  }
+}
+
+/*-------------------- CONTENT --------------------*/
+#home {
+  margin: 10px auto;
+  width: 90%;
+  max-width: 1200px;
+}
+#home ul {
+  padding: 0;
+}
+
+.name {
+  margin: -15px auto 0 auto;
+  font-family: "Quicksand", sans-serif;
+}
+
+.motto {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 15px;
+}
+
+.descriptions {
+  font-family: "Quicksand", sans-serif;
+}
+
+#home div {
+  background-color: lightgrey;
+  padding: 10px;
+  margin-top: 40px;
+}
+
+#home * {
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
+}
+
+#home h1,
+h3,
+h4 {
+  margin: 10px auto;
+  font-family: "Quicksand", sans-serif;
+}
+
+#home h1 {
+  font-family: "Roboto", sans-serif;
+}
+
+#home h3 {
+  font-family: "Quicksand", sans-serif;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+.form {
+  background-color: lightgray;
+  max-width: 700px;
+  margin: auto;
+}
+
+#stormCenter h1 {
+  margin: 10px auto;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+}
+
+#tickmarks {
+  display: none;
+}
+.form * {
+  display: block;
+  padding-top: 10px;
+  margin: 5px;
+}
+#rating {
+  padding: 0;
+  margin-top: -5px;
+}
+.flexly {
+  display: flex;
+}
+#location *,
+#location,
+#danger,
+#danger * {
+  padding: 0;
+}
+#location label,
+#danger label {
+  display: flex;
+}
+
+#location h4,
+#danger h4 {
+  display: block;
+}
+[type*="submit"] {
+  width: 100px;
+  margin: 20px auto;
+  padding-bottom: 10px;
+}
+[type*="text"],
+[type*="email"],
+[type*="tel"] {
+  width: 50%;
+}
+#gallery {
+  max-width: 1000px;
+}
+
+#danger {
+  margin-top: 10px;
+}
+#content {
+  max-width: 1000px;
+  margin: auto;
+}
+#cityName {
+  display: block;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-size: 2rem;
+}
+
+.contentBox {
+  font-display: block;
+  height: 50px;
+  border: 3px solid black;
+  max-width: 1000px;
+  margin: 10px auto;
+}
+
+#hero {
+  position: relative;
+  margin: 100px 10px;
+}
+
+#hero img {
+  display: flex;
+  max-width: 100%;
+  margin: auto;
+}
+
+#thanks {
+  width: 500px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.25rem;
+  margin: 50px auto;
+  text-align: center;
+}
+
+#currentWeather {
+  border: 2px solid gray;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: solid dashed blue;
+  width: 180px;
+  height: 200px;
+  top: 40%;
+  right: 10%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(6 15%);
+  padding: 5px;
+  font-family: "Roboto", sans-serif;
+}
+
+#currentWeather h5 {
+  margin: 0;
+  padding: 5px;
+}
+
+#currentWeather h3 {
+  grid-area: 1/1/1/3;
+  text-align: center;
+}
+
+#rightAlign {
+  text-align: right;
+}
+
+#article {
+  max-width: 1000px;
+  background-color: #e5e5e5;
+  position: relative;
+  margin: 50px 10px;
+}
+
+#article img {
+  display: flex;
+  max-width: 100%;
+  margin: 50px auto;
+  padding-top: 10px;
+}
+
+#article p {
+  padding: 20px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.15rem;
+  margin-top: -50px;
+}
+
+#contact {
+  display: block;
+  background-color: #fca311;
+  padding: 15px;
+}
+
+#contact h6 {
+  text-align: center;
+}
+
+#contact img {
+  width: 30px;
+}
+/*-------------------- FOOTER --------------------*/
+
+footer {
+  background-color: #14213d;
+  color: #e5e5e5;
+  display: grid;
+  margin-top: 50px;
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 30px 30px 1fr 30px 30px;
+}
+
+#info {
+  grid-area: 1/1/4/1;
+  margin: 0;
+  margin-top: -17px;
+}
+
+footer ul {
+  list-style-type: none;
+  float: left;
+}
+
+footer ul li {
+  margin: -7px;
+  padding: 0;
+}
+
+footer img {
+  width: 30px;
+}
+
+#map {
+  float: left;
+  position: relative;
+  bottom: 4px;
+  width: 1.5rem;
+  margin-right: 5px;
+}
+
+#address {
+  padding-left: 4px;
+}
+
+#footerA,
+#footerB {
+  margin: 0;
+  align-self: center;
+}
+
+#footerA {
+  grid-area: 5/1;
+  font-size: 0.75rem;
+}
+
+#footerB {
+  grid-area: 5/2;
+  font-size: 0.75rem;
+  justify-self: right;
+}
+
+#social {
+  grid-area: 1/2/1/2;
+  margin: 0;
+  justify-self: right;
+  padding-right: 0;
+  padding-top: 5px;
+}
+
+#socialIcons {
+  grid-area: 2/2;
+  margin: 0;
+}
+
+#socialIcons li {
+  margin: 5px;
+  float: right;
+  filter: invert(1);
+}
+
+#usa {
+  grid-area: 4/1;
+  display: inline-block;
+  margin: 0;
+  list-style-type: none;
+  align-self: center;
+}
+
+#usa li {
+  display: inline-flex;
+}
+
+#country {
+  position: relative;
+  bottom: 9px;
+  left: 14px;
+}
+
+a {
+  color: #14243d;
+}
